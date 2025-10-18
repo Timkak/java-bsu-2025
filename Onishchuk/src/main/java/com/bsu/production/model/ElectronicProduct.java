@@ -6,6 +6,7 @@ public class ElectronicProduct extends Product {
         super(id, name, productionTime);
     }
 
+    @Override
     public String getCategory() {
         return "Electronics";
     }

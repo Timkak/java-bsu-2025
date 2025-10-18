@@ -9,6 +9,7 @@ public class ElectronicsLine extends ProductionLine<ElectronicProduct> {
         super(lineId, efficiency);
     }
 
+    @Override
     public boolean canProduce(Product product) {
         return product instanceof ElectronicProduct;
     }

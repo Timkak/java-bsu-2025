@@ -9,6 +9,7 @@ public class ChemicalLine extends ProductionLine<ChemicalProduct> {
         super(lineId, efficiency);
     }
 
+    @Override
     public boolean canProduce(Product product) {
         return product instanceof ChemicalProduct;
     }
